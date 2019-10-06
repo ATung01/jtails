@@ -1,13 +1,13 @@
 import React from 'react'
 import Button from './button'
 import styled from 'styled-components'
-import Logo from './images/jtailsLogo.png'
+import Logo from './images/jtailsLogoNoTag.png'
 
 export default class NavBar extends React.Component {
 
     render() {
         const NavContainer = styled.div`
-        height: 8em;
+        height: 7em;
         width: 100%;
         position: absolute;
         top: 0px;
@@ -18,12 +18,11 @@ export default class NavBar extends React.Component {
         float: right;
         border-radius: 0px;
         border: none;
-        height: 100%;
         width: 10%;
-        text-shadow: 2px 2px 1px rgba(201,27,18,0.55);
-        Color: #12C932;
-        font-family: 'Noto Serif', serif;
+        padding-top: 2em;
+        text-shadow: 2px 2px 2px rgba(18,201,50,0.55);
         font-size: 1.2em;
+        font-weight: bold;
         `
         const TopLogo = styled.img`
         height: 100%;
@@ -34,9 +33,9 @@ export default class NavBar extends React.Component {
         return(
             <NavContainer>
                 <TopLogo src={Logo}></TopLogo>
-                <NavButtons className="goop">kdlsjflds</NavButtons>
-                <NavButtons >kdlsjflds</NavButtons>
-                <NavButtons >kdlsjflds</NavButtons>
+                <NavButtons >LESSONS</NavButtons>
+                <NavButtons >ABOUT</NavButtons>
+                <NavButtons >HOME</NavButtons>
             </NavContainer>
         )
     }
